@@ -28,5 +28,9 @@
     "budo": "^9.4.1",
     "faucet": "0.0.1",
     "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "lodash.sample": "^4.2.1",
+    "superagent": "^3.3.1"
   }
 }
