@@ -1,4 +1,4 @@
-export function insertMixcloudWidget(link) {
+export default function insertMixcloudWidget(link) {
 
   // Wrangle link into widget api format
   let widgetFormattedLink = 'https://www.mixcloud.com/widget/iframe/?feed=' + encodeURIComponent(link) + '&amp;hide_cover=1&amp;light=1'
