@@ -4,7 +4,7 @@
   "description": "Boilerplate to rapidly prototype a web app with es2015 (aka ES6) and live reloading",
   "main": "index.js",
   "scripts": {
-    "start": "budo src/index.js --live --cors --debug -- -t [babelify --presets es2015]",
+    "start": "cd src/ && budo index.js --live --cors --debug -- -t [babelify --presets es2015]",
     "test": "node ./test/index.js | faucet"
   },
   "repository": {
