@@ -5,7 +5,7 @@ const { Detector, Models } = require('snowboy')
 const models = new Models()
 
 models.add({
-	file: 'I\'m_up.pmdl',
+  file: __dirname + '/I\'m_up.pmdl',
 	sensitivity: '0.5',
 	audioGain: 1,
 	hotwords: 'I\'m up',
