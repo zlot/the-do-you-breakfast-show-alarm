@@ -5,9 +5,10 @@ const { Detector, Models } = require('snowboy')
 const models = new Models()
 
 models.add({
-	file: 'node_modules/snowboy/resources/snowboy.umdl',
+	file: 'I\'m_up.pmdl',
 	sensitivity: '0.5',
-	hotwords: 'snowboy'
+	audioGain: 1,
+	hotwords: 'I\'m up',
 })
 
 const detector = new Detector({
@@ -25,4 +26,3 @@ mic.pipe(detector)
 console.log('Snowboy ready for hotword')
 
 exports.detector = detector
-
