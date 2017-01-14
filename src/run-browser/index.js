@@ -1,4 +1,7 @@
-var nightmare = require('nightmare')({show: true})
+var nightmare = require('nightmare')({
+  show: true,
+  waitTimeout: 1000*60*60*24
+})
 
 nightmare
   .goto('http://localhost:3000')
