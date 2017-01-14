@@ -7,11 +7,14 @@ grab().then(url => {
   music.play()
 })
 
+document.querySelector('button').addEventListener('click', closeWindow)
+
 let socket = io()
 
 socket.on('hotword', function(msg) {
   console.log('Hotword activated!');
   document.querySelector('h1').textContent = 'Hotword activated! shutting down in 3 seconds...';
+  music.pause()
   document.querySelector('iframe').remove()
   setTimeout(function() {
     closeWindow();

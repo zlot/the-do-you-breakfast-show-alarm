@@ -1,7 +1,7 @@
 import insertWidget from './mixcloud-widget'
 
 let music = (() => {
- 
+
   let hasHadFirstPlay = false
   let widget
 
@@ -19,9 +19,9 @@ let music = (() => {
       widget.ready.then(() => {
         if(!hasHadFirstPlay) {
           widget.events.play.on(onPlay)
-          
+
           function onPlay() {
-            seekTo.call(this, 12) // magic number, explain
+            seekTo.call(this, 17) // magic number, explain
             widget.events.play.off(onPlay)
           }
           function seekTo(seconds) {
@@ -40,11 +40,9 @@ let music = (() => {
         return
       }
 
-      widget.ready.then(() => {
-        widget.pause()
-      })
+      widget.pause()
     }
-  } 
+  }
 
 })()
 
